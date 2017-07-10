@@ -56,7 +56,6 @@ module.exports = class {
     constructor() {
         let file = require('express-fileupload');
         this.path = require('path');
-        this.thumb = require('express-upload-resizer');
         this.Jimp = require("jimp");
         this.init = file();
     }

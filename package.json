@@ -1,6 +1,6 @@
 {
   "name": "dev-express-uploader",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description":"This is module for upload file in very simply way in node js.",
   "main":"index.js",
   "scripts":{
