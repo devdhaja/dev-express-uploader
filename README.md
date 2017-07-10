@@ -5,12 +5,16 @@ This is module that provide functionality for upload file ,resize file when uplo
 How to use :
 
 
-1. Install from node package manager use commond  npm install dev-express-uploader
+1. Install from node package manager use commond  
+
+   npm install dev-express-uploader
 
 2. Include module using 
+
    var expressUploader = require("dev-express-uploader");
 	 
 3. Create instance 
+
    var  uploader = new expressUploader();
 	
 	
@@ -35,7 +39,6 @@ How to use :
    var uploadedFile = data.file;
 	
 Compleat exmaple 
-
 
 
 var express = require("express");
