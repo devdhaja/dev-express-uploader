@@ -1,4 +1,5 @@
 # dev-express-uploader
+
 This is module that provide functionality for upload file ,resize file when upload and file validation when upload file.
 
 
@@ -14,16 +15,17 @@ How to use :
    var expressUploader = require("dev-express-uploader");
 	 
 3. Create instance 
-
+  <pre><code>
    var  uploader = new expressUploader();
+   </code></pre>
 	
 	
 4. Set midile middleware in express 
-
+ <pre><code>
     app.use(uploader.init);
-	
+ </code></pre>
 5.Use uploadFile function for upload file 
-
+<pre><code>
      uploader.uploadFile(req.files.nameOfYourFileFields,{
 	 
 	  ....Uploading file params......
@@ -33,14 +35,17 @@ How to use :
 		 .....Response of file.......
 		 
 	 } );
+	 </code></pre>
 	 
 	 
 6.Data contain name of file 
+<pre><code>
    var uploadedFile = data.file;
+    </code></pre>
 	
 Compleat exmaple 
 
-
+<pre><code>
 var express = require("express");
 
 var expressUploader = require("dev-express-uploader");
@@ -80,9 +85,9 @@ app.post("/saveFile", function (req, res) {
 		
         thumb: true,  // if want to create thumb of image then true otherwise false 
 		
-        width: 120,
+        width: 120, //Thumb Width
 		
-        height: 120,
+        height: 120, //Thumb Height
 		
         quality: 80,   // Afetr resize file then set quality of file 
 		
@@ -104,5 +109,7 @@ app.post("/saveFile", function (req, res) {
     });
 	
 });
+
+</code></pre>
 	
 	

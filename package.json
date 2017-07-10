@@ -1,0 +1,29 @@
+{
+  "name": "dev-express-uploader",
+  "version": "1.0.1",
+  "description":"This is module for upload file in very simply way in node js.",
+  "main":"index.js",
+  "scripts":{
+    "test":"no test specified",
+	"build": "node index.js"
+  },
+  "keywords": [
+    "Express file uploader",
+    "Express file resizer",
+    "Node file uploader",
+    "Node image uploader",
+    "Express image uploader"
+  ],
+  "author": "Devraj Verma <dev.dhaja82@gmail.com> ",
+  "license":"MIT",
+  "readmeFilename": "README.md",
+  "contributors": [],
+  "dependencies": {
+    "express-fileupload": "^0.1.4",
+    "jimp": "0.2.28"
+  },
+  "files": [
+    "Readme.md",
+    "index.js"
+  ]
+}
